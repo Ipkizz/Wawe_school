@@ -1,4 +1,5 @@
-@import url(reset.css);
-@import url(variables.css);
 @import url(fonts.css);
+@import url(reset.css);
 @import url(basic.css);
+@import url(header.css);
+@import url(mobile_nav.css);

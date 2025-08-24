@@ -1,5 +1,30 @@
+:root {
+   --BG-color-green: #00B2A0;
+   --BG-color-light-gray: #F8F8F8;
+   --BG-color-white: #FFFFFF;
+   --TEXT-color-dark-gray: #242121;
+   --TITLE-color-dark-gray: #01353E;
+}
+
 body {
    font-family: Roboto, sans-serif;
    font-weight: 400;
+   font-size: 14px;
+   scroll-behavior: smooth;
+   width: 100%;
+   min-height: 100vh;
+   min-width: 480px;
+   color: var(--TEXT-color-dark-gray);
 }
 
+.container {
+   display: block;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo {
+   color: var(--BG-color-white);
+   width: 60px;
+   height: 63px;
+}
