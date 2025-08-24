@@ -17,7 +17,7 @@
    .burger {
       width: 33px;
       height: 18px;
-      color: rgb(84, 19, 204) !important;
+      color: var(--BG-color-white);
    }
 
    .burger:hover {
@@ -81,6 +81,7 @@
    .cross {
       width: 25px;
       height: 22px;
+      color: var(--TEXT-color-dark-gray);
    }
 
    .cross:hover {
