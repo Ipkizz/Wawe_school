@@ -16,16 +16,16 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header class="header" aria-label="header">
+		<header class="header" aria-label="header section">
 			<section class="container">
-				<div class="header__wrap">
+				<section class="header__wrap">
 					<nav class="nav" aria-label="header navigation">
 						<svg class="logo" aria-label="logotype">
 							<use href="images/sprites.svg#logo-icon"></use>
 						</svg>
 						<ul class="nav__list" aria-label="header list of links">
 							<li class="nav__element" aria-label="link about">
-								<a href="#" class="nav__link">О нас</a>
+								<a href="#about-id" class="nav__link">О нас</a>
 							</li>
 							<li class="nav__element"aria-label="link services">
 								<a href="#" class="nav__link">Послуги</a>
@@ -55,26 +55,28 @@
 						</svg>
 						<input type="checkbox" id="toggler-id" class="nav-mobile__toggler">
 						<div class="nav-mobile__wrap" aria-label="nav-mobile wrap">
-							<ul class="nav-mobile__list" aria-label="header list of links">
-								<li class="nav-mobile__element" aria-label="link about">
-									<a href="#" class="nav-mobile__link">О нас</a>
-								</li>
-								<li class="nav-mobile__element"aria-label="link services">
-									<a href="#" class="nav-mobile__link">Послуги</a>
-								</li>
-								<li class="nav-mobile__element">
-									<a href="#" class="nav-mobile__link" aria-label="link cost">Вартість</a>
-								</li>
-								<li class="nav-mobile__element">
-									<a href="#" class="nav-mobile__link" aria-label="link blog">Блог</a>
-								</li>
-								<li class="nav-mobile__element">
-									<a href="#" class="nav-mobile__link" aria-label="link team">Команда</a>
-								</li>
-								<li class="nav-mobile__element">
-									<a href="#" class="nav-mobile__link" aria-label="link contacts">Контакти</a>
-								</li>
-							</ul>
+							<label class="nav-mobile__list-wrap" for="toggler-id" aria-label="nav-mobile links">
+								<ul class="nav-mobile__list" aria-label="header list of links">
+									<li class="nav-mobile__element" aria-label="link about">
+										<a href="#about-id" class="nav-mobile__link">О нас</a>
+									</li>
+									<li class="nav-mobile__element"aria-label="link services">
+										<a href="#" class="nav-mobile__link">Послуги</a>
+									</li>
+									<li class="nav-mobile__element">
+										<a href="#" class="nav-mobile__link" aria-label="link cost">Вартість</a>
+									</li>
+									<li class="nav-mobile__element">
+										<a href="#" class="nav-mobile__link" aria-label="link blog">Блог</a>
+									</li>
+									<li class="nav-mobile__element">
+										<a href="#" class="nav-mobile__link" aria-label="link team">Команда</a>
+									</li>
+									<li class="nav-mobile__element">
+										<a href="#" class="nav-mobile__link" aria-label="link contacts">Контакти</a>
+									</li>
+								</ul>
+							</label>
 							<label class="cross-wrap" for="toggler-id" aria-label="nav-mobile cross icon">
 								<svg class="cross" aria-label="nav-mobile cross">
 									<use href="images/sprites.svg#cross-icon"></use>
@@ -88,18 +90,54 @@
 							<p class="hero__description" aria-label="hero description">Школа сьорфінгу на канарських островах</p>
 						</div>
 						<div class="hero__btn-wrap" aria-label="hero button">
-							<a href="#" class="hero__btn">
+							<a href="#about-id" class="hero__btn">
 								<svg class="hero__btn-icon" aria-label="logotype">
 									<use href="images/sprites.svg#down-icon"></use>
 								</svg>
 							</a>
 						</div>
 					</div>
-				</div>
+				</section>
 			</section>
 		</header>
-		<main>
-
+		<main class="main" aria-label="main section">
+			<section class="about" aria-label="section about">
+				<section class="container">
+					<section class="about__wrap" id="about-id">
+						<div class="title title_center" aria-label="title of section">
+							<h2 class="title__header" aria-label="title header">
+								Про школу, про серфінг, про Канари
+							</h2>
+						</div>
+						<div class="about__content" aria-label="about-block content wrap">
+							<p class="about__text-block" aria-label="about-block text">
+								Канарські острови невипадково називають європейськими Гаваями – це ідеальне місце для шанувальників серфінгу: стабільний теплий вітер цілий рік, піщані пляжі, кілометри незайманих просторів та прозоре море. А справжньою Меккою для серфінгістів стає Фуертевентура – ​​другий за величиною острів архіпелагу.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Саме тут найкраще в Іспанії місце, де можна пройти навчання серфінгу. Крім того, що взимку і восени сюди приходять величезні атлантичні хвилі, Фуертевентура може похвалитися і безліччю мілководних спокійних лагун, які відмінно підходять для навчання серфінгістів-початківців.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Серфінг на Канарських островах доступний цілий рік – і хвилі, і слушна погода тут є завжди. Причому хвилю, що підходить за рівнем, зможе знайти і справжній профі, і новачок. Не випадково вважається, що саме це місце найкраще підійде для навчання, тут можливо без труднощів переходити на новий рівень.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Перераховуючи переваги, не можна обійти і те, що пляжі Фуертевентури найдовші на Канарах. У результаті неможливо уявити їх переповненими туристами. Ви зіткнетеся тільки з тими, кого, як і вас, цікавитиме одна мета – навчання серфінгу.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Поки що ви тільки хочете зрозуміти, що таке серфінг, чи вже випробували всю красу катання на хвилях, але бажаєте підняти свій рівень? Наша школа серфінгу зможе запропонувати навчання для будь-якого рівня підготовки.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Чотири години захоплюючих занять на день допоможуть вам впевнено підкорювати хвилі, відчути себе справжнім серфінгістом.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Основні переваги нашої школи – висока якість викладання та організації занять, безпека (всі наші клієнти застраховані в компанії Allianz), відмінний інвентар та екіпірування (надається на весь курс навчання), у тому числі м'які безпечні дошки для початківців.
+							</p>
+							<p class="about__text-block" aria-label="about-block text">
+								Спочатку ми визначаємо рівень катання та фізичної підготовки і лише потім складаємо програму підготовки. І можемо запевнити, що після того, як закінчиться навчання, ви не тільки отримаєте масу чудових відчуттів, але і цей рівень підніметься на новий щабель.
+							</p>
+						</div>
+					</section>
+				</section>
+			</section>
 		</main>
 		<footer>
 

@@ -6,15 +6,31 @@
    --TITLE-color-dark-gray: #01353E;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: Roboto, sans-serif;
    font-weight: 400;
    font-size: 14px;
-   scroll-behavior: smooth;
    width: 100%;
    min-height: 100vh;
    min-width: 480px;
    color: var(--TEXT-color-dark-gray);
+}
+
+.header {
+   display: block;
+   max-width: 100%;
+   min-width: 480px;
+   height: 100vh;
+   background: 
+   linear-gradient(1deg,
+   rgba(255, 255, 255, 0.1) 0%, 
+   rgba(255, 255, 255, 0.2) 60%, 
+   rgba(0, 26, 26, 0.912) 100%), 
+   url(../images/about_cover.webp) center/cover no-repeat;
 }
 
 .container {
@@ -29,3 +45,49 @@ body {
    height: 63px;
 }
 
+.main {
+   display: block;
+   max-width: 100%;
+   min-width: 480px;
+}
+
+.title {
+   display: block;
+   width: 100%;
+   margin: 0 auto 100px;
+}
+
+.title_center {
+   text-align: center;
+}
+
+.title_left {
+   text-align: left;
+}
+
+.title_right {
+   text-align: right;
+}
+
+.title__header {
+   font-family: Raleway, sans-serif;
+   font-weight: 600;
+   color: var(--TITLE-color-dark-gray);
+   font-size: 48px;
+   letter-spacing: 0.6px;
+   text-transform: uppercase;
+   position: relative;
+   display: inline-block;
+}
+
+.title__header::after {
+   content: '';
+   display: block;
+   background-color: var(--BG-color-green);
+   width: 70px;
+   height: 5px;
+   position: absolute;
+   right: -60px;
+   bottom: 5px;
+   transform: rotate(-55deg) skewX(45deg);
+}
