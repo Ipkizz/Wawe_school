@@ -16,64 +16,68 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header class="header" aria-label="header section">
+		<header class="nav" aria-label="Navigation section">
 			<section class="container">
-				<section class="header__wrap">
-					<nav class="nav" aria-label="header navigation">
-						<svg class="logo" aria-label="logotype">
-							<use href="images/sprites.svg#logo-icon"></use>
-						</svg>
-						<ul class="nav__list" aria-label="header list of links">
-							<li class="nav__element" aria-label="link about">
-								<a href="#about-id" class="nav__link">О нас</a>
+				<nav class="nav__wrap" aria-label="Navigation section content">
+					<section class="nav__desc" aria-label="Navigation for big devices">
+						<a href="#home-id" class="logo__link" aria-label="back to start page">
+							<svg class="logo" aria-label="logotype">
+								<use href="images/sprites.svg#logo-icon"></use>
+							</svg>
+						</a>
+						<ul class="nav__desc-list" aria-label="header list of links">
+							<li class="nav__desc-element" aria-label="link about">
+								<a href="#about-id" class="nav__desc-link">О нас</a>
 							</li>
-							<li class="nav__element"aria-label="link services">
-								<a href="#services-id" class="nav__link">Послуги</a>
+							<li class="nav__desc-element"aria-label="link services">
+								<a href="#services-id" class="nav__desc-link">Послуги</a>
 							</li>
-							<li class="nav__element">
-								<a href="#" class="nav__link" aria-label="link cost">Вартість</a>
+							<li class="nav__desc-element">
+								<a href="#" class="nav__desc-link" aria-label="link cost">Вартість</a>
 							</li>
-							<li class="nav__element">
-								<a href="#" class="nav__link" aria-label="link blog">Блог</a>
+							<li class="nav__desc-element">
+								<a href="#" class="nav__desc-link" aria-label="link blog">Блог</a>
 							</li>
-							<li class="nav__element">
-								<a href="#" class="nav__link" aria-label="link team">Команда</a>
+							<li class="nav__desc-element">
+								<a href="#" class="nav__desc-link" aria-label="link team">Команда</a>
 							</li>
-							<li class="nav__element">
-								<a href="#" class="nav__link" aria-label="link contacts">Контакти</a>
+							<li class="nav__desc-element">
+								<a href="#" class="nav__desc-link" aria-label="link contacts">Контакти</a>
 							</li>
 						</ul>
-					</nav>
-					<nav class="nav-mobile" aria-label="header navigation mobile size">
-						<label class="burger-wrap" for="toggler-id" aria-label="nav-mobile burger icon">
-							<svg class="burger" aria-label="nav-mobile burger">
+					</section>
+					<section class="nav__mob" aria-label="Navigation for small devices">
+						<label class="nav__mob-burger-wrap" for="toggler-id" aria-label="nav-mobile burger icon">
+							<svg class="nav__mob-burger" aria-label="nav-mobile burger">
 								<use href="images/sprites.svg#burger-icon"></use>
 							</svg>
 						</label>
-						<svg class="logo" aria-label="logotype">
-							<use href="images/sprites.svg#logo-icon"></use>
-						</svg>
-						<input type="checkbox" id="toggler-id" class="nav-mobile__toggler">
-						<div class="nav-mobile__wrap" aria-label="nav-mobile wrap">
-							<label class="nav-mobile__list-wrap" for="toggler-id" aria-label="nav-mobile links">
-								<ul class="nav-mobile__list" aria-label="header list of links">
-									<li class="nav-mobile__element" aria-label="link about">
-										<a href="#about-id" class="nav-mobile__link">О нас</a>
+						<a href="#home-id" class="logo__link" aria-label="back to start page">
+							<svg class="logo" aria-label="logotype">
+								<use href="images/sprites.svg#logo-icon"></use>
+							</svg>
+						</a>
+						<input type="checkbox" id="toggler-id" class="nav__mob-toggler">
+						<div class="nav__mob-wrap" aria-label="nav-mobile wrap">
+							<label class="nav__mob-list-wrap" for="toggler-id" aria-label="nav-mobile links">
+								<ul class="nav__mob-list" aria-label="header list of links">
+									<li class="nav__mob-element" aria-label="link about">
+										<a href="#about-id" class="nav__mob-link">О нас</a>
 									</li>
-									<li class="nav-mobile__element"aria-label="link services">
-										<a href="#services-id" class="nav-mobile__link">Послуги</a>
+									<li class="nav__mob-element"aria-label="link services">
+										<a href="#services-id" class="nav__mob-link">Послуги</a>
 									</li>
-									<li class="nav-mobile__element">
-										<a href="#" class="nav-mobile__link" aria-label="link cost">Вартість</a>
+									<li class="nav__mob-element">
+										<a href="#" class="nav__mob-link" aria-label="link cost">Вартість</a>
 									</li>
-									<li class="nav-mobile__element">
-										<a href="#" class="nav-mobile__link" aria-label="link blog">Блог</a>
+									<li class="nav__mob-element">
+										<a href="#" class="nav__mob-link" aria-label="link blog">Блог</a>
 									</li>
-									<li class="nav-mobile__element">
-										<a href="#" class="nav-mobile__link" aria-label="link team">Команда</a>
+									<li class="nav__mob-element">
+										<a href="#" class="nav__mob-link" aria-label="link team">Команда</a>
 									</li>
-									<li class="nav-mobile__element">
-										<a href="#" class="nav-mobile__link" aria-label="link contacts">Контакти</a>
+									<li class="nav__mob-element">
+										<a href="#" class="nav__mob-link" aria-label="link contacts">Контакти</a>
 									</li>
 								</ul>
 							</label>
@@ -83,8 +87,14 @@
 								</svg>
 							</label>
 						</div>
-					</nav>
-					<div class="hero" aria-label="hero section">
+					</section>
+				</nav>
+			</section>
+		</header>
+		<main class="main" aria-label="main section" id="home-id">
+			<section class="hero" aria-label="Hero section">
+				<section class="container">
+					<section class="hero__wrap" aria-label="Hero section content">
 						<div class="hero__content" aria-label="hero content">
 							<h1 class="hero__title" aria-label="hero title">wawe</h1>
 							<p class="hero__description" aria-label="hero description">Школа сьорфінгу на канарських островах</p>
@@ -96,11 +106,9 @@
 								</svg>
 							</a>
 						</div>
-					</div>
+					</section>
 				</section>
 			</section>
-		</header>
-		<main class="main" aria-label="main section">
 			<section class="about" aria-label="section about">
 				<section class="container">
 					<section class="about__wrap" id="about-id">
