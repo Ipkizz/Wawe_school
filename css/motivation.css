@@ -1,0 +1,100 @@
+.motivation {
+   display: block;
+   width: 100%;
+   background-color: var(--BG-color-white);
+   position: relative;
+}
+
+.motivation__bg-img {
+   display: block;
+   width: 50%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 1;
+}
+
+.motivation > .container {
+   position: relative;
+   z-index: 2;
+}
+
+.motivation .title {
+   text-align: left;
+}
+
+.motivation__wrap {
+   max-width: 50%;
+   padding: 190px 20px 140px;
+}
+
+.motivation__inblock-img {
+   display: none;
+}
+
+.motivation__content {
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   row-gap: 30px;
+}
+
+.motivation__text {
+   font-weight: 300;
+   line-height: 18px;
+   letter-spacing: 0.6px;
+   color: var(--TEXT-color-dark-gray);
+}
+
+/* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
+@media (max-width: 1200px) {
+   .motivation__wrap {
+      padding: 150px 20px 130px;
+   }
+
+   .motivation__content {
+      row-gap: 20px;
+   }
+}
+
+@media (max-width: 992px) {
+   .motivation__wrap {
+      padding: 120px 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .motivation__bg-img {
+      display: none;
+   }
+
+   .motivation .title {
+      text-align: center;
+   }
+   
+   .motivation__wrap {
+      max-width: 100%;
+      padding: 100px 20px;
+   }
+
+   .motivation__content > .motivation__inblock-img {
+      display: block;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+   }
+}
+
+@media (max-width: 576px) {
+   .motivation__wrap {
+      padding: 80px 20px;
+   }
+
+   .motivation__content > .motivation__inblock-img {
+      height: 300px;
+   }
+}
