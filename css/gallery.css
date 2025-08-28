@@ -1,0 +1,238 @@
+.gallery {
+   display: block;
+   width: 100%;
+   background-color: var(--BG-color-white);
+   position: relative;
+}
+
+.gallery__wrap {
+   padding: 190px 20px;
+}
+
+.gallery__block {
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 50px;
+}
+
+.gallery__categories {
+   display: flex;
+   justify-content: start;
+   align-items: start;
+   column-gap: 20px;
+}
+
+.gallery__category {
+   display: inline-block;
+}
+
+.gallery__category-link {
+   font-size: 24px;
+   letter-spacing: 0.6px;
+   line-height: 18px;
+   text-transform: uppercase;
+   color: var(--TEXT-color-dark-gray);
+}
+
+.gallery__category-link.active {
+   color: var(--BG-color-green);
+}
+
+.gallery__category-link:hover {
+   color: var(--BG-color-green);
+}
+
+.gallery__images-container {
+   max-width: 1100px;
+   margin: 0 auto 50px auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+   gap: 50px;
+}
+
+.gallery__image-wrap {
+   display: flex;
+   height: 280px;
+   position: relative;
+   overflow: hidden;
+}
+
+.gallery__image {
+   display: block;
+   object-fit: cover;
+}
+
+.gallery__image-big {
+   width: 500px;
+}
+
+.gallery__image-small {
+   width: 240px;
+}
+
+.gallery__image-wrap:nth-child(1) {
+   order: 0;
+}
+.gallery__image-wrap:nth-child(2) {
+   order: 1;
+}
+.gallery__image-wrap:nth-child(3) {
+   order: 2;
+}
+.gallery__image-wrap:nth-child(4) {
+   order: 3;
+}
+.gallery__image-wrap:nth-child(5) {
+   order: 4;
+}
+.gallery__image-wrap:nth-child(6) {
+   order: 5;
+}
+
+.gallery__image-wrap::after {
+   content: 'full size';
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 178, 160, 0.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   text-align: center;
+   line-height: 280px;
+   cursor: pointer;
+   color: var(--BG-color-white);
+   visibility: hidden;
+   transition: visibility 0.22s, font-size 0.5s;
+}
+
+.gallery__image-wrap:hover::after {
+   visibility: visible;
+   font-size: 20px;
+   letter-spacing: 0.6px;
+}
+
+.gallery__btn-wrap {
+   width: 100%;
+   text-align: center;
+}
+
+.gallery__btn {
+   display: inline-block;
+   width: 350px;
+   height: 70px;
+   cursor: pointer;
+   background-color: var(--BG-color-white);
+   border: 1px solid var(--TEXT-color-dark-gray);
+   font-size: 24px;
+   letter-spacing: 0.6px;
+   line-height: 18px;
+   color: var(--TITLE-color-dark-gray);
+   text-transform: uppercase;
+   transition: background-color 0.22s, color 0.22s;
+}
+
+.gallery__btn:hover {
+   background-color: var(--BG-color-green);
+   color: var(--BG-color-white);
+}
+
+/* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
+@media (max-width: 1200px) {
+   .gallery__wrap {
+      padding: 150px 20px 130px;
+   }
+
+   .gallery__block {
+      row-gap: 30px;
+   }
+
+   .gallery__categories {
+      justify-content: center;
+      align-items: center;
+   }
+
+   .gallery__category-link {
+      font-size: 22px;
+   }
+
+   .gallery__images-container {
+      max-width: 600px;
+      justify-content: center;
+      align-items: center;
+      align-content: space-between;
+      gap: 20px;
+   }
+
+   .gallery__image-wrap:nth-child(1) {
+      order: 0;
+   }
+   .gallery__image-wrap:nth-child(2) {
+      order: 1;
+   }
+   .gallery__image-wrap:nth-child(3) {
+      order: 2;
+   }
+   .gallery__image-wrap:nth-child(4) {
+      order: 5;
+   }
+   .gallery__image-wrap:nth-child(5) {
+      order: 4;
+   }
+   .gallery__image-wrap:nth-child(6) {
+      order: 3;
+   }
+}
+
+@media (max-width: 992px) {
+   .gallery__wrap {
+      padding: 120px 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .gallery__wrap {
+      padding: 100px 20px;
+   }
+
+   .gallery__btn {
+      width: 300px;
+      height: 60px;
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 576px) {
+   .gallery__wrap {
+      padding: 80px 20px;
+   }
+
+   .gallery__category-link {
+      font-size: 20px;
+   }
+
+   .gallery__images-container {
+      max-width: 460px;
+      gap: 20px;
+   }
+
+   .gallery__image-wrap {
+      height: 280px;
+   }
+
+   .gallery__image-big {
+      width: 460px;
+   }
+
+   .gallery__image-small {
+      width: 220px;
+   }
+
+   .gallery__btn {
+      font-size: 20px;
+   }
+}
