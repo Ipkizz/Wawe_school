@@ -1,0 +1,79 @@
+.quote {
+   display: block;
+   background-color: var(--BG-color-light-gray);
+   max-width: 100%;
+   height: 200px;
+}
+
+.quote__wrap {
+   max-width: 100%;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.quote__block {
+   width: 750px;
+}
+
+.quote__text {
+   font-weight: 400;
+   font-style: italic;
+   font-size: 36px;
+   line-height: 40px;
+   letter-spacing: 0.6px;
+   color: var(--TITLE-color-dark-gray);
+}
+
+.quote__author {
+   font-weight: 300;
+   font-style: italic;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 0.6px;
+   text-align: right;
+   color: var(--TEXT-color-dark-gray);
+}
+
+/* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
+@media (max-width: 1200px) {
+   .quote__text {
+      font-size: 32px;
+      line-height: 40px;
+   }
+}
+
+@media (max-width: 992px) {
+   .quote__text {
+      font-size: 28px;
+      line-height: 40px;
+   }
+
+   .quote__block {
+      width: 600px;
+   }
+}
+
+@media (max-width: 768px) {
+   .quote__text {
+      font-size: 22px;
+      line-height: 40px;
+   }
+
+   .quote__block {
+      width: 500px;
+   }
+}
+
+@media (max-width: 576px) {
+   .quote__text {
+      font-size: 18px;
+      line-height: 40px;
+   }
+
+   .quote__block {
+      width: 400px;
+   }
+}

@@ -6,7 +6,7 @@
 
 .services__wrap {
    max-width: 100%;
-   padding: 190px 20px;
+   padding: 190px 0px;
 }
 
 .services__info {
@@ -127,7 +127,7 @@
 /* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
 @media (max-width: 1200px) {
    .services__wrap {
-      padding: 150px 20px;
+      padding: 150px 0px;
    }
 
    .services__list {
@@ -142,7 +142,7 @@
 
 @media (max-width: 992px) {
    .services__wrap {
-      padding: 120px 20px;
+      padding: 120px 0px;
    }
 
    .services__list {

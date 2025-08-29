@@ -27,7 +27,7 @@
 
 .motivation__wrap {
    max-width: 50%;
-   padding: 190px 20px 140px;
+   padding: 190px 0px 140px;
 }
 
 .motivation__inblock-img {
@@ -53,7 +53,7 @@
 /* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
 @media (max-width: 1200px) {
    .motivation__wrap {
-      padding: 150px 20px 130px;
+      padding: 150px 0px 130px;
    }
 
    .motivation__content {
@@ -63,7 +63,7 @@
 
 @media (max-width: 992px) {
    .motivation__wrap {
-      padding: 120px 20px;
+      padding: 120px 0px;
    }
 }
 

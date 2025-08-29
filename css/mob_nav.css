@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+   .nav__wrap {
+      padding: 0 20px;
+   }
+   
    .nav__mob {
       display: block;
       max-width: 100%;
