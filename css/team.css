@@ -1,0 +1,137 @@
+.team {
+   display: block;
+   width: 100%;
+   background-color: var(--BG-color-white);
+}
+
+.team__block-wrap {
+   max-width: 100%;
+   padding: 190px 0px 90px;
+}
+
+.team__trainer-cards-wrap {
+   display: flex;
+   justify-content: space-between;
+   padding: 100px 0 0;
+   margin: 0 0 100px;
+}
+
+.team__trainer-card {
+   display: block;
+   width: 330px;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   overflow: hidden;
+}
+
+.team__trainer-photo {
+   display: block;
+   width: 330px;
+   height: auto;
+   object-fit: cover;
+   margin: 0 0 25px 0;
+}
+
+ .team__trainer-info-wrap {
+   width: 100%;
+ }
+
+.team__trainer-name {
+   text-align: center;
+   line-height: 18px;
+   font-size: 18px;
+   letter-spacing: 0.6px;
+   font-weight: 700;
+}
+
+.team__trainer-position {
+   text-align: center;
+   line-height: 18px;
+   letter-spacing: 0.6px;
+}
+
+/* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
+@media (max-width: 1200px) {
+   .team__block-wrap {
+      padding: 150px 0px 50px;
+   }
+
+   .team__trainer-cards-wrap {
+      padding: 50px 0 0;
+   }
+
+   .team__trainer-card {
+      width: 280px;
+   }
+
+   .team__trainer-photo {
+      width: 280px;
+   }
+
+}
+
+@media (max-width: 992px) {
+   .team__block-wrap {
+      padding: 120px 0px 20px;
+   }
+
+   .team__trainer-cards-wrap {
+      padding: 20px 0 0;
+      margin: 0 0 50px;
+   }
+
+   .team__trainer-card {
+      width: 220px;
+   }
+
+   .team__trainer-photo {
+      width: 220px;
+   }
+}
+
+@media (max-width: 768px) {
+   .team__block-wrap {
+      padding: 100px 0px 20px;
+   }
+
+   .team__trainer-cards-wrap {
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      row-gap: 50px;
+   }
+
+   .team__trainer-card {
+      width: 280px;
+   }
+
+   .team__trainer-photo {
+      width: 280px;
+   }
+}
+
+@media (max-width: 576px) {
+   .team__block-wrap {
+      padding: 80px 0px 20px;
+   }
+
+   .team__trainer-cards-wrap {
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      row-gap: 50px;
+      padding: 0;
+      margin: 0 0 30px;
+   }
+
+   .team__trainer-card {
+      width: 250px;
+   }
+
+   .team__trainer-photo {
+      width: 250px;
+   }
+}
