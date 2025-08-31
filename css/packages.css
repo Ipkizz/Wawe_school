@@ -1,0 +1,143 @@
+.packages {
+   display: block;
+   width: 100%;
+   background-color: var(--BG-color-light-gray);
+}
+
+.packages__block-wrap {
+   max-width: 100%;
+   padding: 190px 0px;
+}
+
+.packages__cards-wrap {
+   display: flex;
+   justify-content: space-between;
+   padding: 100px 0 0;
+}
+
+.packages__card {
+   display: block;
+   background-color: var(--BG-color-white);
+   width: 380px;
+   height: 550px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+   padding: 50px 20px;
+}
+
+.packages__card-header {
+   font-size: 36px;
+   line-height: 40px;
+   letter-spacing: 0.6px;
+   color: var(--TITLE-color-dark-gray);
+   margin: 0 0 50px 0;
+}
+
+.packages__card-services-list {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   row-gap: 15px;
+   flex: 1 1 auto;
+}
+
+.packages__card-service {
+   line-height: 18px;
+   font-size: 14px;
+   letter-spacing: 0.6px;
+   color: var(--TEXT-color-dark-gray);
+}
+
+.packages__card-price {
+   font-size: 36px;
+   line-height: 40px;
+}
+
+.packages__card-price > span {
+   font-size: 18px;
+   line-height: 40px;
+   vertical-align: middle;
+}
+
+/* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
+@media (max-width: 1200px) {
+   .packages__block-wrap {
+      padding: 150px 0px;
+   }
+
+   .packages__cards-wrap {
+      padding: 50px 0 0;
+   }
+
+   .packages__card {
+      width: 280px;
+      height: 500px;
+      padding: 30px 20px;
+   }
+
+   .packages__card-header {
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0 0 30px 0;
+   }
+
+   .packages__card-price {
+      font-size: 32px;
+   }
+}
+
+@media (max-width: 992px) {
+   .packages__block-wrap {
+      padding: 120px 0px;
+   }
+
+   .packages__cards-wrap {
+      padding: 20px 0 0;
+   }
+
+   .packages__card {
+      width: 220px;
+      height: 500px;
+      padding: 20px;
+   }
+
+   .packages__card-header {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 20px 0;
+   }
+
+   .packages__card-price {
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 768px) {
+   .packages__block-wrap {
+      padding: 100px 0px;
+   }
+
+   .packages__cards-wrap {
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      row-gap: 50px;
+   }
+
+   .packages__card {
+      width: 300px;
+      height: 470px;
+      padding: 20px;
+   }
+}
+
+@media (max-width: 576px) {
+   .packages__block-wrap {
+      padding: 80px 0px;
+   }
+}

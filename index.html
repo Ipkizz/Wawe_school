@@ -33,7 +33,7 @@
 								<a href="#services-id" class="nav__desc-link">Послуги</a>
 							</li>
 							<li class="nav__desc-element">
-								<a href="#" class="nav__desc-link" aria-label="link cost">Вартість</a>
+								<a href="#price-id" class="nav__desc-link" aria-label="link cost">Вартість</a>
 							</li>
 							<li class="nav__desc-element">
 								<a href="#blog-id" class="nav__desc-link" aria-label="link blog">Блог</a>
@@ -68,7 +68,7 @@
 										<a href="#services-id" class="nav__mob-link">Послуги</a>
 									</li>
 									<li class="nav__mob-element">
-										<a href="#" class="nav__mob-link" aria-label="link cost">Вартість</a>
+										<a href="#price-id" class="nav__mob-link" aria-label="link cost">Вартість</a>
 									</li>
 									<li class="nav__mob-element">
 										<a href="#blog-id" class="nav__mob-link" aria-label="link blog">Блог</a>
@@ -91,8 +91,8 @@
 				</nav>
 			</section>
 		</header>
-		<main class="main" aria-label="main section" id="home-id">
-			<section class="hero" aria-label="Hero section">
+		<main class="main" aria-label="main section">
+			<section class="hero" id="home-id" aria-label="Hero section">
 				<section class="container">
 					<section class="hero__wrap" aria-label="Hero section content">
 						<div class="hero__content" aria-label="hero content">
@@ -109,9 +109,9 @@
 					</section>
 				</section>
 			</section>
-			<section class="about" aria-label="section about">
+			<section class="about" id="about-id" aria-label="section about">
 				<section class="container">
-					<section class="about__wrap" id="about-id">
+					<section class="about__wrap">
 						<div class="title" aria-label="title of section">
 							<h2 class="title__header" aria-label="title header">
 								Про школу, про серфінг, про Канари
@@ -146,9 +146,9 @@
 					</section>
 				</section>
 			</section>
-			<section class="services" aria-label="section services">
+			<section class="services" id="services-id" aria-label="section services">
 				<section class="container">
-					<section class="services__wrap" id="services-id">
+					<section class="services__wrap">
 						<div class="title" aria-label="title of section">
 							<h2 class="title__header" aria-label="title header">
 								в школі ви отримаєте
@@ -401,6 +401,59 @@
 						</div>
 						<div class="button__btn-wrap" aria-label="gallery button">
 							<button type="button" class="button__btn" title="показати ще">показати ще</button>
+						</div>
+					</section>
+				</section>
+			</section>
+			<section class="packages" id="price-id" aria-label="packages section">
+				<section class="container">
+					<section class="packages__block-wrap" aria-label="packages-block content wrap">
+						<div class="title" aria-label="title of section">
+							<h2 class="title__header" aria-label="title header">
+								пакети послуг
+							</h2>
+						</div>
+						<div class="packages__cards-wrap" aria-label="cards with service's pakages">
+							<div class="packages__card" aria-label="service's package card">
+								<h3 class="packages__card-header" aria-label="service's pack-card header">Cтандарт</h3>
+								<ul class="packages__card-services-list">
+									<li class="packages__card-service" aria-label="service name">Проживання на віллі 6 ночей</li>
+									<li class="packages__card-service" aria-label="service name">Номер категорії "стандарт"</li>
+									<li class="packages__card-service" aria-label="service name">Екіпірування для навчання</li>
+									<li class="packages__card-service" aria-label="service name">Навчання серфінгу 5 тренувань по 2 год.</li>
+									<li class="packages__card-service" aria-label="service name">Страхування</li>
+									<li class="packages__card-service" aria-label="service name">Вечірка зі смаколиками та дискотекою</li>
+								</ul>
+								<p class="packages__card-price">450<span> $</span></p>
+							</div>
+							<div class="packages__card" aria-label="service's package card">
+								<h3 class="packages__card-header" aria-label="service's pack-card header">Все включено</h3>
+								<ul class="packages__card-services-list">
+									<li class="packages__card-service" aria-label="service name">Проживання на віллі 6 ночей</li>
+									<li class="packages__card-service" aria-label="service name">Номер категорії "люкс"</li>
+									<li class="packages__card-service" aria-label="service name">Екіпірування для навчання</li>
+									<li class="packages__card-service" aria-label="service name">Навчання серфінгу 8 тренувань по 2 год.</li>
+									<li class="packages__card-service" aria-label="service name">Страхування</li>
+									<li class="packages__card-service" aria-label="service name">Вечірка зі смаколиками та дискотекою</li>
+									<li class="packages__card-service" aria-label="service name">Авіапереліт Тенерифе-Лансароте-Тенерифе</li>
+									<li class="packages__card-service" aria-label="service name">Сніданки на віллі</li>
+								</ul>
+								<p class="packages__card-price">950<span> $</span></p>
+							</div>
+							<div class="packages__card" aria-label="service's package card">
+								<h3 class="packages__card-header" aria-label="service's pack-card header">Профі</h3>
+								<ul class="packages__card-services-list">
+									<li class="packages__card-service" aria-label="service name">Проживання на віллі 8 ночей</li>
+									<li class="packages__card-service" aria-label="service name">Номер категорії "люкс"</li>
+									<li class="packages__card-service" aria-label="service name">Екіпірування для навчання</li>
+									<li class="packages__card-service" aria-label="service name">Навчання серфінгу 16 тренувань по 2 год.</li>
+									<li class="packages__card-service" aria-label="service name">Страхування</li>
+									<li class="packages__card-service" aria-label="service name">Вечірка зі смаколиками та дискотекою</li>
+									<li class="packages__card-service" aria-label="service name">Авіапереліт Тенерифе-Лансароте-Тенерифе</li>
+									<li class="packages__card-service" aria-label="service name">Сніданки та вечері на віллі</li>
+								</ul>
+								<p class="packages__card-price">1450<span> $</span></p>
+							</div>
 						</div>
 					</section>
 				</section>

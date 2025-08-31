@@ -45,12 +45,14 @@
    font-size: 18px;
    letter-spacing: 0.6px;
    font-weight: 700;
+   color: var(--TITLE-color-dark-gray);
 }
 
 .team__trainer-position {
    text-align: center;
    line-height: 18px;
    letter-spacing: 0.6px;
+   color: var(--TEXT-color-dark-gray);
 }
 
 /* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
@@ -105,33 +107,16 @@
    }
 
    .team__trainer-card {
-      width: 280px;
+      width: 300px;
    }
 
    .team__trainer-photo {
-      width: 280px;
+      width: 300px;
    }
 }
 
 @media (max-width: 576px) {
    .team__block-wrap {
       padding: 80px 0px 20px;
-   }
-
-   .team__trainer-cards-wrap {
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      row-gap: 50px;
-      padding: 0;
-      margin: 0 0 30px;
-   }
-
-   .team__trainer-card {
-      width: 250px;
-   }
-
-   .team__trainer-photo {
-      width: 250px;
    }
 }
