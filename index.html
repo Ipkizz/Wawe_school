@@ -2,10 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		
 		<title>Document title</title>
-		<!-- <link rel="icon" href="images/favicon.png" type="image/png"> -->
-
+		<link rel="icon" href="images/favicon.png" type="image/png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -42,7 +40,7 @@
 								<a href="#team-id" class="nav__desc-link" aria-label="link team">Команда</a>
 							</li>
 							<li class="nav__desc-element">
-								<a href="#" class="nav__desc-link" aria-label="link contacts">Контакти</a>
+								<a href="#application-id" class="nav__desc-link" aria-label="link contacts">Контакти</a>
 							</li>
 						</ul>
 					</section>
@@ -77,7 +75,7 @@
 										<a href="#team-id" class="nav__mob-link" aria-label="link team">Команда</a>
 									</li>
 									<li class="nav__mob-element">
-										<a href="#" class="nav__mob-link" aria-label="link contacts">Контакти</a>
+										<a href="#application-id" class="nav__mob-link" aria-label="link contacts">Контакти</a>
 									</li>
 								</ul>
 							</label>
@@ -226,7 +224,13 @@
 				</section>
 			</section>
 			<section class="motivation" aria-label="section motivation">
-				<img src="images/conquer_peaks.webp" class="motivation__bg-img" alt="motivation bg img">
+				<picture class="motivation__bg-img-wrap">
+					<img src="images/conquer_peaks.webp" class="motivation__bg-img" alt="motivation bg img">
+					<source media="(max-width: 1200px)" srcset="images/conquer_peaks-xl.webp">
+					<source media="(max-width: 992px)" srcset="images/conquer_peaks-lg.webp">
+					<source media="(max-width: 768px)" srcset="images/conquer_peaks-md.webp">
+					<source media="(max-width: 576px)" srcset="images/conquer_peaks-sm.webp">
+				</picture>
 				<section class="container">
 					<section class="motivation__wrap">
 						<div class="title" aria-label="title of section">
@@ -336,7 +340,13 @@
 				</section>
 				<section class="blog__slider-wrap" aria-label="slider wrap">
 					<div class="blog__slider-slide" aria-label="slide">
-						<img src="images/blog_slider_cover.webp" class="blog__slide-img" alt="slide img">
+						<picture class="blog__slide-img-wrap">
+							<img src="images/blog_slider_cover.webp" class="blog__slide-img" alt="slide img">
+							<source media="(max-width: 1200px)" srcset="images/blog_slider_cover-xl.webp">
+							<source media="(max-width: 992px)" srcset="images/blog_slider_cover-lg.webp">
+							<source media="(max-width: 768px)" srcset="images/blog_slider_cover-md.webp">
+							<source media="(max-width: 576px)" srcset="images/blog_slider_cover-sm.webp">
+						</picture> 
 						<section class="container">
 							<section class="blog__slider-slide-text-wrap" aria-label="blog content wrap">
 								<a href="#" class="blog__slider-slide-header-link">
@@ -467,9 +477,46 @@
 					</section>
 				</section>
 			</section>
+			<section class="application" id="application-id" aria-label="section application">
+				<section class="container">
+					<section class="application__block-wrap" aria-label="application-block content wrap">
+						<div class="title" aria-label="title of section">
+							<h2 class="title__header" aria-label="title header">
+								залишити заявку
+							</h2>
+						</div>
+						<div class="application__form-wrap">
+							<form action="" method="get" class="application__form" aria-label="application form">
+								<input class="application__form-name" type="text" name="name" placeholder="Імʼя" aria-label="name">
+								<input class="application__form-phone" type="phone" name="phone" placeholder="Телефон" aria-label="phone">
+								<textarea class="application__form-text" name="massage" placeholder="Залиште повідомлення, і ми звʼяжемось з Вами у найближчий час" aria-label="text"></textarea>
+								<input class="application__form-btn button__btn" type="submit" name="submit" value="Відправити" aria-label="button">
+							</form>
+							<div class="application__contacts" aria-label="contacts">
+								<p>Є питання?<br>Ви можете звʼязатись з нами:</p>
+								<p>WatsApp, Viber, Telegram<br><span>+3 467 486 37 88</span></p>
+								<p>Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660</p>
+							</div>
+						</div>
+						<div class="application__socials" aria-label="social links">
+							<a href="#" class="application__socials-link">instagram</a>
+							<a href="#" class="application__socials-link">facebook</a>
+							<a href="#" class="application__socials-link">youtube</a>
+						</div>
+					</section>
+				</section>
+			</section>
 		</main>
-		<footer> 
-
+		<footer class="footer" aria-label="footer"> 
+			<section class="container">
+				<div class="footer__logo-wrap" aria-label="footer logo wrap">
+					<a href="#home-id" class="footer__logo-link" aria-label="back to start page">
+						<svg class="logo" aria-label="logotype">
+							<use href="images/sprites.svg#logo-icon"></use>
+						</svg>
+					</a>
+				</div>
+			</section>
 		</footer>
 		<script src="js/scripts.js"></script>
 	</body>

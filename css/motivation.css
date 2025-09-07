@@ -5,6 +5,10 @@
    position: relative;
 }
 
+.motivation__bg-img-wrap {
+   display: block;
+}
+
 .motivation__bg-img {
    display: block;
    width: 50%;
@@ -27,7 +31,7 @@
 
 .motivation__wrap {
    max-width: 50%;
-   padding: 190px 0px 140px;
+   padding: 190px 20px 140px 0px;
 }
 
 .motivation__inblock-img {
@@ -53,7 +57,7 @@
 /* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
 @media (max-width: 1200px) {
    .motivation__wrap {
-      padding: 150px 0px 130px;
+      padding: 150px 20px 130px 0px;
    }
 
    .motivation__content {
@@ -63,7 +67,7 @@
 
 @media (max-width: 992px) {
    .motivation__wrap {
-      padding: 120px 0px;
+      padding: 120px 20px 120px 0px;
    }
 }
 
@@ -78,7 +82,7 @@
    
    .motivation__wrap {
       max-width: 100%;
-      padding: 100px 20px 50px 20px;
+      padding: 100px 20px 50px;
    }
 
    .motivation__content > .motivation__inblock-img {

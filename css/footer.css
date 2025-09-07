@@ -1,0 +1,35 @@
+.footer {
+   display: block;
+   width: 100%;
+   height: 200px;
+   background-color: var(--BG-color-green);
+}
+
+.footer .container {
+   height: 200px;
+}
+
+.footer__logo-wrap {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__logo-link {
+   color: var(--BG-color-white);
+   width: 60px;
+   height: 63px;
+}
+
+.footer .logo {
+   color: var(--BG-color-white);
+   width: 60px;
+   height: 63px;
+   position: inherit;
+}
+
+.footer .logo:hover {
+   color: var(--BG-color-white);
+}

@@ -6,7 +6,7 @@
 
 .map__block-wrap {
    max-width: 100%;
-   padding: 190px 0px;
+   padding: 190px 0px 50px;
 }
 
 .map__frame {
@@ -19,7 +19,7 @@
 /* sm: 576px, md: 768px, lg: 992px, xl: 1200px, */
 @media (max-width: 1200px) {
    .map__block-wrap {
-      padding: 150px 0px;
+      padding: 150px 0px 50px;
    }
 
    .map__frame {
@@ -30,7 +30,7 @@
 
 @media (max-width: 992px) {
    .map__block-wrap {
-      padding: 120px 0px;
+      padding: 120px 0px 50px;
    }
 
    .map__frame {
@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
    .map__block-wrap {
-      padding: 100px 0px;
+      padding: 100px 0px 50px;
    }
 
    .map__frame {
@@ -52,7 +52,7 @@
 
 @media (max-width: 576px) {
    .map__block-wrap {
-      padding: 80px 0px;
+      padding: 80px 0px 50px;
    }
 
    .map__frame {

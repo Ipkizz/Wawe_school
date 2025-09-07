@@ -22,6 +22,12 @@
    overflow: hidden;
 }
 
+.blog__slide-img-wrap {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
 .blog__slide-img {
    display: block;
    width: 100%;
